@@ -1,0 +1,573 @@
+/* ОБЩИЕ СТИЛИ */
+a {
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    color: white;
+}
+
+p {
+    color: #d43c38;
+}
+
+body {
+    background-color: black;
+    height: 400vh;
+}
+
+/* ХЕДЕР */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 70px;
+}
+
+.Name {
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin: 0; 
+    margin-right: auto; 
+    padding-left: 10px;
+}
+
+.Teg_a, .contacts a {
+    display: flex;
+    gap: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+    justify-content: center; 
+    color: white;
+    transition: color 0.3s;
+}
+
+.Teg_a a:hover, .contacts a:hover {
+    color: #d43c38;
+}
+
+.contacts {
+    display: flex;
+    align-items: center; /* Выравниваем элементы по вертикали */
+    margin-left: 20px; /* Добавляем небольшой отступ между номером телефона и ссылкой на Телеграм */
+}
+
+.contacts .tel {
+    margin-right: 20px; /* Добавляем отступ справа для разделения номера телефона и ссылки на Телеграм */
+}
+
+.telegram-button {
+    font-size: 24px;
+}
+
+/* ПЕРВАЯ СЕКЦИЯ */
+.section1 {
+padding: 50px;
+margin-left: 170px;
+background-image: url(../img/sec1.jpg);
+background-size: cover; /* Опционально, чтобы изображение покрывало весь блок */
+background-position: center; /* Опционально, чтобы изображение было центрировано */
+background-repeat: no-repeat; /* Опционально, чтобы изображение не повторялось */
+
+}
+
+.section2 {  
+    padding-top: 20px;
+    margin-right: 50px;
+    background-image: url(..//img/sec2.png);
+    background-size: 75%; /* Опционально, чтобы изображение покрывало весь блок */
+    background-position: center; /* Опционально, чтобы изображение было центрировано */
+    background-repeat: no-repeat; /* Опционально, чтобы изображение не повторялось */
+    opacity: 0; /* Начальное состояние невидимое */
+    transform: translateX(100%); /* Сначала текст находится слева от экрана */
+    animation: slideIn 2s forwards; /* Применение анимации */
+}
+
+.section3 {
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.section3 h1 {
+margin: auto;
+max-width: 620px;
+padding-bottom: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-family: "Poppins", sans-serif;
+font-size: 35px;
+font-weight: 900;
+}
+
+.section4 {
+    position: relative;
+    padding: 50px 0 150px 0;
+    margin-left: 170px;
+}
+
+.section4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/backgroundsec4.png);
+    background-size: 78%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Прозрачность фона 50% */
+    z-index: -1; /* Чтобы фон был позади содержимого */
+}
+.section4 h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 900;
+}
+.section4 P {
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    font-weight: 900;
+
+}
+.sec4_desc {
+    color: white;
+    font-size: 5px;
+}
+.About__us {
+    text-align: left; /* Выровнять текст по левому краю */
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center; /* Выровнять текст и иконку по вертикали */
+    padding-bottom: 25px;
+}
+
+.text-with-icon p {
+    margin: 0; /* Убираем отступы, если есть */
+    padding-right: 10px; /* Добавляем отступ справа для пространства между текстом и иконкой */
+}
+
+.icon {
+    width: 40px;
+    height: 40px; /* Автоматическое изменение высоты изображения в соответствии с шириной */
+}
+
+
+.icon {
+    width: 35px;
+    height: 35px; /* автоматически подстраивает высоту в соответствии с шириной */
+    margin-left: 5px; /* отступ слева от текста */
+}
+.section2__text{
+    max-width: 620px;
+    margin-left: auto;
+}
+.section2__text p {
+    font-size: 30px;
+    font-weight: 900;
+}
+p.section_desc1{
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+
+.Sbor2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+
+    /* margin-top: 50px; Добавляем отступ сверху */
+}
+.Sbor3 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: auto;
+    max-width: 620px;
+}
+
+.Sbor4 {
+    
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin-left: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(..//img/background5.png);
+    background-size: 100%; /* Опционально, чтобы изображение покрывало весь блок */
+    background-position: center; /* Опционально, чтобы изображение было центрировано */
+    background-repeat: no-repeat; /* Опционально, чтобы изображение не повторялось */
+    /* margin-top: 50px; Добавляем отступ сверху */
+}
+
+.Sbor5 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: auto;
+    max-width: 620px;
+    
+}
+
+.section3__text{
+    max-width: 620px;
+    margin-left: auto;
+}
+.section3__text p {
+    font-size: 30px;
+    font-weight: 900;
+}
+p.section_desc2{
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+
+.Feedback1{
+    margin-left: auto;
+    max-width: 620px;
+}
+
+.section1__text{
+    max-width: 620px;
+    margin: left;
+    opacity: 0; /* Начальное состояние невидимое */
+    transform: translateX(-100%); /* Сначала текст находится слева от экрана */
+    animation: slideIn 2s forwards; /* Применение анимации */
+
+}
+
+.section1__text p {
+    font-size: 30px;
+    font-weight: 900;
+}
+p.section_desc{
+    font-size: 17px;
+    color: white;
+    font-weight: 500;
+}
+
+.Sbor {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+
+    /* margin-top: 50px; Добавляем отступ сверху */
+}
+.Feedback{
+margin-left: 127px;
+margin-top: 25px;
+}
+
+.button_feed {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    font-weight: 800;
+    
+}
+
+.button_feed:hover {
+    background-color: #d43c38;
+    transform: scale(1.1);
+}
+
+/* .button1, .Sbor1 {
+    width: 620px;
+    color: white;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    margin: left;
+    text-decoration: none;
+} */
+
+.Sbor1 {
+    font-size: 40px;
+    font-weight: 900;
+    opacity: 0; /* Начальное состояние невидимое */
+    transform: translateX(-100%); /* Сначала текст находится слева от экрана */
+    animation: slideIn 2s forwards; /* Применение анимации */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1; /* Текст становится видимым */
+        transform: translateX(0); /* Текст перемещается на своё место */
+    }
+}
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 100%;
+    flex: 0 0 100%;
+    transition: transform 0.5s;
+    
+}
+
+
+
+/* button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}  */
+
+.prev {
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.next {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/* КОНТАКТЫ */
+.contact {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.contact h1 {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.form2 {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами */
+    max-width: 400px; /* Максимальная ширина формы */
+    margin: 0 auto; /* Центрирование формы */
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Небольшая тень */
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.form-control {
+    color: white;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    border-color: #d43c38;
+    outline: none;
+}
+
+textarea.form-control {
+    height: 100px;
+    resize: none; /* Убирает возможность изменять размер текстового поля */
+}
+
+.btn-success {
+    margin-left: 0px;
+    padding: 10px !important;
+    background-color: #333 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    font-size: 16px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-success:hover {
+    background-color: #d43c38 !important; 
+    transform: scale(1.1) !important;
+    color: white !important;
+}
+
+    /* ФУТЕР */
+
+footer {
+    /* position: fixed; */
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 10px;
+    color: white;
+}
+
+/* СТИЛИ ДЛЯ УСТРОЙСТВ */
+
+@media only screen and (max-width: 768px) {
+    .Name {
+        font-size: 14px; /* Уменьшаем размер шрифта в заголовке */
+    }
+
+    .Teg_a {
+        gap: 8px; /* Уменьшаем расстояние между элементами */
+        font-size: 10px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor {
+        font-size: 8px; /* Уменьшаем размер шрифта */
+        margin-top: 15px; /* Уменьшаем отступ сверху */
+    }
+
+    .button {
+        padding: 12px 20px; /* Уменьшаем отступы кнопки */
+        font-size: 15px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor1 {
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .contacts .tel {
+        margin-right: 2px; /* Уменьшаем отступ справа */
+    }
+
+    .telegram-button {
+        font-size: 10px; /* Уменьшаем размер шрифта */
+    }
+
+    .Feedback {
+        margin-top: 10px; /* Уменьшаем отступ сверху */
+    }
+
+    .contacts {
+        margin-left: 2px; /* Уменьшаем отступ слева */
+    }
+}
+
+/* Стили для планшетов и ноутбуков объединены */
+@media only screen and (max-width: 1024px) {
+    .Name {
+        font-size: 14px; /* Уменьшаем размер шрифта в заголовке */
+    }
+
+    .Teg_a {
+        gap: 20px; /* Уменьшаем расстояние между элементами */
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor {
+        font-size: 10px; /* Уменьшаем размер шрифта */
+        margin-top: 15px; /* Уменьшаем отступ сверху */
+    }
+
+    .button {
+        padding: 15px 30px; /* Уменьшаем отступы кнопки */
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor1 {
+        font-size: 30px; /* Уменьшаем размер шрифта */
+    }
+
+    .contacts .tel {
+        margin-right: 2px; /* Уменьшаем отступ справа */
+    }
+
+    .telegram-button {
+        font-size: 16px; /* Уменьшаем размер шрифта */
+    }
+
+    .Feedback {
+        margin-top: 10px; /* Уменьшаем отступ сверху */
+    }
+
+    .contacts {
+        margin-left: 2px; /* Уменьшаем отступ слева */
+    }
+}
+
+/* Стили для мониторов поменьше объединены в одну группу */
+@media only screen and (max-width: 360px) {
+    .Name {
+        font-size: 14px; /* Уменьшаем размер шрифта в заголовке */
+    }
+
+    .Teg_a {
+        gap: 8px; /* Уменьшаем расстояние между элементами */
+        font-size: 8px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor {
+        font-size: 8px; /* Уменьшаем размер шрифта */
+        margin-top: 15px; /* Уменьшаем отступ сверху */
+    }
+
+    .button {
+        padding: 12px 20px; /* Уменьшаем отступы кнопки */
+        font-size: 15px; /* Уменьшаем размер шрифта */
+    }
+
+    .Sbor1 {
+        font-size: 20px; /* Уменьшаем размер шрифта */
+    }
+
+    .contacts .tel {
+        margin-right: 2px; /* Уменьшаем отступ справа */
+    }
+
+    .telegram-button {
+        font-size: 8px; 
+    }}
